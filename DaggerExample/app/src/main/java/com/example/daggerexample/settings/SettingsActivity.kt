@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.daggerexample.MyApplication
-import com.example.daggerexample.R
+import com.example.android.dagger.R
 import com.example.daggerexample.login.LoginActivity
 
 class SettingsActivity : AppCompatActivity() {

@@ -3,8 +3,8 @@ package com.example.daggerexample.registration
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.android.dagger.R
 import com.example.daggerexample.MyApplication
-import com.example.daggerexample.R
 import com.example.daggerexample.main.MainActivity
 import com.example.daggerexample.registration.enterdetails.EnterDetailsFragment
 import com.example.daggerexample.registration.termsandconditions.TermsAndConditionsFragment

@@ -10,9 +10,9 @@ import android.widget.TextView
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import com.example.android.dagger.R
 import com.example.daggerexample.registration.RegistrationActivity
 import com.example.daggerexample.registration.RegistrationViewModel
-import com.example.daggerexample.R
 
 class EnterDetailsFragment : Fragment() {
 

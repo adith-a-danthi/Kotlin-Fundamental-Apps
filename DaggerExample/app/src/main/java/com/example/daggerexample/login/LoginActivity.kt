@@ -10,10 +10,10 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.core.widget.doOnTextChanged
 import androidx.lifecycle.Observer
+import com.example.android.dagger.R
 import com.example.daggerexample.main.MainActivity
 import com.example.daggerexample.MyApplication
 import com.example.daggerexample.registration.RegistrationActivity
-import com.example.daggerexample.R
 
 class LoginActivity : AppCompatActivity() {
 

@@ -5,11 +5,11 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.android.dagger.R
 import com.example.daggerexample.MyApplication
 import com.example.daggerexample.login.LoginActivity
 import com.example.daggerexample.registration.RegistrationActivity
 import com.example.daggerexample.settings.SettingsActivity
-import com.example.daggerexample.R
 
 class MainActivity : AppCompatActivity() {
 
