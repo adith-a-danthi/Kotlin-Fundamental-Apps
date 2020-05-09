@@ -8,9 +8,11 @@ import com.example.daggerexample.MyApplication
 import com.example.daggerexample.main.MainActivity
 import com.example.daggerexample.registration.enterdetails.EnterDetailsFragment
 import com.example.daggerexample.registration.termsandconditions.TermsAndConditionsFragment
+import javax.inject.Inject
 
 class RegistrationActivity : AppCompatActivity() {
 
+    @Inject
     lateinit var registrationViewModel: RegistrationViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
