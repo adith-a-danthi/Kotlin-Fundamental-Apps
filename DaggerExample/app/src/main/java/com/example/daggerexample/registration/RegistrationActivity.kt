@@ -1,5 +1,6 @@
 package com.example.daggerexample.registration
 
+import android.app.Application
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -12,14 +13,15 @@ import javax.inject.Inject
 
 class RegistrationActivity : AppCompatActivity() {
 
-    @Inject
-    lateinit var registrationViewModel: RegistrationViewModel
+    @Inject lateinit var registrationViewModel: RegistrationViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Grabs instance of the application graph and populates @Inject fields with objects from the graph
+        (application as MyApplication).appComponent.inject(this)
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration)
 
-        registrationViewModel = RegistrationViewModel((application as MyApplication).userManager)
         supportFragmentManager.beginTransaction()
             .add(R.id.fragment_holder, EnterDetailsFragment())
             .commit()

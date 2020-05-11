@@ -1,6 +1,7 @@
 package com.example.daggerexample.di
 
 import android.content.Context
+import com.example.daggerexample.main.MainActivity
 import com.example.daggerexample.registration.RegistrationActivity
 import dagger.BindsInstance
 import dagger.Component
@@ -17,5 +18,5 @@ interface AppComponent {
 
     // Classes that can be injected by this component
     fun inject(activity: RegistrationActivity)
-
+    fun inject(activity: MainActivity)
 }
