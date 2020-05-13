@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
      * else carry on with MainActivity
      */
     override fun onCreate(savedInstanceState: Bundle?) {
-
+        // Grabs instance of the application graph and populates @Inject fields with objects from the graph
         (application as MyApplication).appComponent.inject(this)
 
         super.onCreate(savedInstanceState)
