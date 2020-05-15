@@ -1,6 +1,7 @@
 package com.example.daggerexample.di
 
 import android.content.Context
+import com.example.daggerexample.login.LoginComponent
 import com.example.daggerexample.main.MainActivity
 import com.example.daggerexample.registration.RegistrationComponent
 import com.example.daggerexample.registration.enterdetails.EnterDetailsFragment
@@ -19,9 +20,9 @@ interface AppComponent {
         fun create(@BindsInstance context: Context): AppComponent
     }
 
-    // Expose RegistrationComponent factory from the graph
     // Declaring a function that returns a type allows retrieving types from the graph
     fun registrationComponent(): RegistrationComponent.Factory
+    fun loginComponent(): LoginComponent.Factory
 
     // Classes that can be injected by this component
     // Declaring a function that returns Unit and takes a class as a parameter allows field injection in that class
