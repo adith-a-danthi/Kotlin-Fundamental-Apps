@@ -5,6 +5,9 @@ import com.example.daggerexample.login.LoginComponent
 import com.example.daggerexample.main.MainActivity
 import com.example.daggerexample.registration.RegistrationComponent
 import com.example.daggerexample.registration.enterdetails.EnterDetailsFragment
+import com.example.daggerexample.settings.SettingsActivity
+import com.example.daggerexample.user.UserComponent
+import com.example.daggerexample.user.UserManager
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton
@@ -24,10 +27,12 @@ interface AppComponent {
     fun registrationComponent(): RegistrationComponent.Factory
     fun loginComponent(): LoginComponent.Factory
 
+    fun userManager(): UserManager
+
     // Classes that can be injected by this component
     // Declaring a function that returns Unit and takes a class as a parameter allows field injection in that class
-    fun inject(activity: MainActivity)
-
+/*    fun inject(activity: MainActivity)
+    fun inject(activity: SettingsActivity)*/
     // Classes are injected in RegistrationComponent
 /*
     fun inject(activity: RegistrationActivity)
