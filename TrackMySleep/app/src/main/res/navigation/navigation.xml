@@ -24,7 +24,7 @@
         tools:layout="@layout/fragment_sleep_quality" >
         <argument
             android:name="sleepNightKey"
-            app:argType="Long"/>
+            app:argType="long"/>
         <action
             android:id="@+id/action_sleepQualityFragment_to_sleep_tracker_fragment"
             app:destination="@id/sleep_tracker_fragment"
