@@ -32,7 +32,13 @@ class SleepTrackerFragment : Fragment() {
         val viewModel = ViewModelProvider(
             this, viewModelFactory).get(SleepTrackerViewModel::class.java)
 
-        viewModel.nightString.observe(requireActivity(), Observer { textview.text = it })
+        viewModel.nightString.observe(requireActivity(), Observer {
+            if (it != null){
+                textView.text = it.toString()
+            } else {
+                textView.text = " "
+            }
+        })
 
         start_button.setOnClickListener { viewModel.onStartTracking() }
         stop_button.setOnClickListener { viewModel.onStopTracking() }
